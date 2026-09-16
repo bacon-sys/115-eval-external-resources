@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>外部資源爭取情形（112–114 學年度）｜宜蘭縣立大同國民中學</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#241C18;
+  --ink-soft:#4A3C33;
+  --paper:#F7F2E8;
+  --paper-2:#EFE6D5;
+  --red:#A3231F;
+  --red-2:#C9563F;
+  --olive:#6B6A45;
+  --sand:#C2A878;
+  --grey:#7A6E63;
+  --line:#D6C8AE;
+
+  --c-T:#A3231F;
+  --c-C:#6B6A45;
+  --c-F:#8C7A5E;
+  --c-V:#C9563F;
+  --c-D:#9A9186;
+
+  --fs:18px;
+}
+
+*{box-sizing:border-box}
+html{font-size:var(--fs)}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:"Noto Sans TC",system-ui,-apple-system,"PingFang TC","Microsoft JhengHei",sans-serif;
+  font-size:1rem;
+  line-height:1.85;
+  -webkit-text-size-adjust:100%;
+}
+.wrap{max-width:1140px;margin:0 auto;padding:0 1.4rem}
+
+/* ---------- header ---------- */
+header{background:var(--ink);color:var(--paper);padding:2.6rem 0 0}
+.eyebrow{font-size:.95rem;letter-spacing:.14em;color:var(--sand);margin:0 0 .5rem}
+header h1{
+  font-size:2.5rem;font-weight:900;line-height:1.25;margin:0 0 .6rem;
+  letter-spacing:.02em;
+}
+header .sub{font-size:1.05rem;color:#D8CCB8;margin:0 0 2rem;max-width:44em}
+.weavebar{
+  height:22px;
+  background:
+    repeating-linear-gradient(135deg, var(--red) 0 11px, transparent 11px 22px),
+    repeating-linear-gradient(45deg, var(--red) 0 11px, var(--paper) 11px 22px);
+  background-color:var(--paper);
+}
+
+/* ---------- sections ---------- */
+section{padding:3.2rem 0 .6rem}
+section + section{border-top:1px solid var(--line)}
+h2{
+  font-size:1.6rem;font-weight:700;margin:0 0 .4rem;line-height:1.35;
+}
+h2 .num{color:var(--red);font-weight:900;margin-right:.5rem}
+.lede{font-size:1.02rem;color:var(--ink-soft);margin:0 0 1.8rem;max-width:46em}
+h3{font-size:1.15rem;font-weight:700;margin:2.2rem 0 .8rem}
+
+/* ---------- weave ---------- */
+.weave{margin:0 0 1.2rem}
+.wrow{display:grid;grid-template-columns:8rem 1fr;align-items:start;gap:1rem;margin-bottom:1.9rem}
+.wyear{font-weight:900;font-size:1.15rem;color:var(--ink);white-space:nowrap;padding-top:.55rem}
+.wyear small{display:block;font-weight:400;font-size:.85rem;color:var(--grey);line-height:1.5}
+.wcells{display:flex;flex-wrap:wrap;align-items:center;gap:.55rem;min-height:70px}
+.dia{display:inline-flex;align-items:center;justify-content:center}
+.dia i{display:block;transform:rotate(45deg);background:var(--dc);border-radius:2px}
+.wnote{font-size:.93rem;color:var(--grey);margin:.55rem 0 0;line-height:1.7}
+.wnote b{color:var(--ink-soft);font-weight:500}
+
+.legend{display:flex;flex-wrap:wrap;gap:.4rem 1.5rem;font-size:.95rem;color:var(--ink-soft);margin:.4rem 0 1.4rem}
+.legend span{display:inline-flex;align-items:center;gap:.5rem}
+.swatch{width:14px;height:14px;transform:rotate(45deg);display:inline-block;border-radius:2px}
+
+/* ---------- key figures ---------- */
+.figs{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin:2.4rem 0 .5rem;border-top:2px solid var(--ink)}
+.fig{padding:1.2rem 1.2rem 1.4rem;border-right:1px solid var(--line)}
+.fig:last-child{border-right:0}
+.fig b{display:block;font-size:2.1rem;font-weight:900;line-height:1.2;letter-spacing:-.01em}
+.fig span{display:block;font-size:.98rem;color:var(--grey);margin-top:.2rem}
+
+/* ---------- bars ---------- */
+.stack{display:flex;width:100%;height:42px;overflow:hidden;margin:.35rem 0 .2rem;background:var(--paper-2)}
+.stack div{height:100%}
+.barlabel{display:flex;justify-content:space-between;font-size:.95rem;color:var(--ink-soft)}
+.barlabel b{font-weight:700;color:var(--ink)}
+.stackgroup{margin-bottom:1.5rem}
+
+.hbars{margin:.5rem 0 0}
+.hbar{display:grid;grid-template-columns:8.5rem 1fr 9rem;align-items:center;gap:.9rem;margin-bottom:.7rem}
+.hbar .hname{font-weight:700;font-size:1rem}
+.hbar .htrack{background:var(--paper-2);height:30px;position:relative}
+.hbar .hfill{height:100%;background:var(--olive)}
+.hbar .hval{text-align:right;font-size:.98rem;color:var(--ink-soft)}
+.hbar .hval b{color:var(--ink)}
+
+/* ---------- tables ---------- */
+.tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:1rem 0 .5rem}
+table{border-collapse:collapse;width:100%;font-size:.98rem;min-width:640px}
+caption{text-align:left;font-size:.95rem;color:var(--grey);padding-bottom:.5rem}
+th,td{padding:.62rem .7rem;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+thead th{background:var(--ink);color:var(--paper);font-weight:500;font-size:.95rem;border-bottom:0;white-space:nowrap}
+td.num,th.num{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
+tbody tr:hover{background:var(--paper-2)}
+tfoot td{font-weight:900;border-top:2px solid var(--ink);border-bottom:0;background:var(--paper-2)}
+.tag{display:inline-block;padding:.08rem .5rem;font-size:.86rem;border-radius:2px;white-space:nowrap;color:#fff}
+.tag.g{background:transparent;color:var(--ink-soft);border:1px solid var(--line)}
+
+/* ---------- filters ---------- */
+.filters{display:flex;flex-wrap:wrap;gap:1.4rem;margin:.6rem 0 1rem;align-items:flex-end}
+.fgroup{display:flex;flex-direction:column;gap:.35rem}
+.fgroup > span{font-size:.9rem;color:var(--grey)}
+.chips{display:flex;flex-wrap:wrap;gap:.4rem}
+.chip{
+  font:inherit;font-size:.95rem;padding:.3rem .8rem;cursor:pointer;
+  background:transparent;border:1px solid var(--line);color:var(--ink-soft);border-radius:2px;
+}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.chip:focus-visible{outline:3px solid var(--red);outline-offset:2px}
+.searchbox{font:inherit;font-size:1rem;padding:.42rem .7rem;border:1px solid var(--line);background:#fff;color:var(--ink);border-radius:2px;min-width:15rem}
+.count{font-size:.98rem;color:var(--grey);margin:.2rem 0 0}
+.sortbtn{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:pointer;font-weight:500}
+.sortbtn:focus-visible{outline:2px solid var(--red)}
+
+/* ---------- notes ---------- */
+.notes{background:var(--paper-2);padding:1.4rem 1.6rem;margin:1.2rem 0 0;border-top:3px solid var(--sand)}
+.notes h3{margin-top:0}
+.notes ul{margin:0;padding-left:1.3rem}
+.notes li{margin-bottom:.6rem;font-size:.98rem;color:var(--ink-soft)}
+footer{background:var(--ink);color:#C0B4A3;font-size:.92rem;padding:1.8rem 0;margin-top:3rem}
+footer a{color:var(--sand)}
+
+@media (max-width:760px){
+  :root{--fs:18px}
+  header h1{font-size:1.85rem}
+  .figs{grid-template-columns:1fr;border-top:2px solid var(--ink)}
+  .fig{border-right:0;border-bottom:1px solid var(--line)}
+  .wrow{grid-template-columns:1fr;gap:.2rem}
+  .wyear small{display:inline;margin-left:.6rem}
+  .hbar{grid-template-columns:1fr;gap:.2rem}
+  .hbar .hval{text-align:left}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+
+@media print{
+  body{background:#fff;color:#000;font-size:11pt}
+  header{background:#fff;color:#000;padding-top:0}
+  header .sub{color:#333}
+  .eyebrow{color:#666}
+  .weavebar,.filters,.searchbox,footer{display:none}
+  thead th{background:#eee;color:#000}
+  section{page-break-inside:avoid;padding:1.2rem 0}
+  .tablewrap{overflow:visible}
+  table{min-width:0}
+  .detail{border-left:3px solid #000}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <p class="eyebrow">宜蘭縣立大同國民中學　115 學年度實驗教育評鑑　指標 4-2</p>
+    <h1>外部資源爭取情形</h1>
+    <p class="sub">112 至 114 學年度，各處室共爭取 56 案外部資源。本頁以泰雅織紋形式呈現每一案的規模、用途與取得方式，並提供完整明細查詢。</p>
+  </div>
+  <div class="weavebar" aria-hidden="true"></div>
+</header>
+
+<main class="wrap">
+
+<section id="weave-sec">
+  <h2><span class="num">一</span>三年 56 案一覽</h2>
+  <p class="lede">一個菱形代表一案，大小對應核定金額，顏色對應用途。三列分別為 112、113、114 學年度，同一列內依主責處室排列。</p>
+
+  <div class="weave" id="weave"></div>
+
+  <div class="legend">
+    <span><i class="swatch" style="background:var(--c-T)"></i>教學與學生支持</span>
+    <span><i class="swatch" style="background:var(--c-C)"></i>文化場域</span>
+    <span><i class="swatch" style="background:var(--c-F)"></i>校舍設施改善</span>
+    <span><i class="swatch" style="background:var(--c-V)"></i>技藝教育專班</span>
+    <span><i class="swatch" style="background:var(--c-D)"></i>災損復建</span>
+  </div>
+
+  <div class="figs">
+    <div class="fig"><b>56 案</b><span>三年累計，平均每學年 18.7 案</span></div>
+    <div class="fig"><b id="figAmt">—</b><span>核定金額合計（元）</span></div>
+    <div class="fig"><b>4 處室</b><span>教務、學務、總務、輔導全數有案</span></div>
+  </div>
+</section>
+
+<section>
+  <h2><span class="num">二</span>資源用途結構</h2>
+  <p class="lede">校舍設施改善占比最高，反映校區建物老舊、維護需求集中的實際處境；教學與學生支持、文化場域雖金額較小，案件數卻最多，是逐案申請、逐案核銷累積而來。</p>
+
+  <div id="purposeBars"></div>
+
+  <div class="tablewrap">
+    <table id="purposeTable">
+      <caption>各用途別三年合計（單位：元）</caption>
+      <thead><tr><th>用途</th><th class="num">案數</th><th class="num">112 學年度</th><th class="num">113 學年度</th><th class="num">114 學年度</th><th class="num">三年合計</th><th class="num">占比</th></tr></thead>
+      <tbody></tbody>
+      <tfoot></tfoot>
+    </table>
+  </div>
+</section>
+
+<section>
+  <h2><span class="num">三</span>各處室分布</h2>
+  <p class="lede">四處室均有穩定的爭取紀錄。以案件數而言，總務處與教務處最多；以金額而言，總務處因承接大型工程而占比最高，輔導組則集中於技藝教育專班與生涯發展相關計畫。</p>
+  <div class="hbars" id="officeBars"></div>
+</section>
+
+<section>
+  <h2><span class="num">四</span>完整明細查詢</h2>
+  <p class="lede">可依學年度、處室、用途篩選，或直接輸入關鍵字搜尋。點選欄位標題可依金額或學年度排序。</p>
+
+  <div class="filters">
+    <div class="fgroup"><span>學年度</span><div class="chips" id="fYear"></div></div>
+    <div class="fgroup"><span>主責處室</span><div class="chips" id="fOffice"></div></div>
+    <div class="fgroup"><span>用途</span><div class="chips" id="fPurpose"></div></div>
+    <div class="fgroup"><span>關鍵字</span><input class="searchbox" id="q" type="search" placeholder="輸入計畫名稱關鍵字" aria-label="輸入計畫名稱關鍵字"></div>
+  </div>
+  <p class="count" id="count"></p>
+
+  <div class="tablewrap">
+    <table id="mainTable">
+      <thead><tr>
+        <th><button class="sortbtn" data-sort="y">學年度</button></th>
+        <th>計畫名稱</th>
+        <th><button class="sortbtn" data-sort="a">核定金額（元）</button></th>
+        <th>主責處室</th>
+        <th>用途</th>
+        <th>取得方式</th>
+      </tr></thead>
+      <tbody></tbody>
+      <tfoot></tfoot>
+    </table>
+  </div>
+</section>
+
+<section>
+  <h2><span class="num">五</span>資料說明</h2>
+  <div class="notes">
+    <h3>編列與分類說明</h3>
+    <ul>
+      <li>技藝教育專案編班計畫係依核定班級數逐年申請編列，屬本校技藝教育專班之常態性經費來源，爰另列一類，以利檢視其餘各類資源之實際規模。</li>
+      <li>校舍設施改善占比較高，係反映校區建物老舊、屋頂防水與管線設備維護需求集中之實際處境，非資源配置之偏重。</li>
+      <li>明細表「取得方式」欄位中，「申請核配」指依相關補助要點提出申請、由主管機關核配者；「競爭型提案」指須提出計畫書並經審查評比後始獲核定者；「災後核撥」指天然災害後依災損查報核撥之復建經費。</li>
+      <li>本頁僅涵蓋各處室爭取之計畫型資源；指標 4-2 頁面另有（一）競爭型計畫、（四）學生獎助學金、（五）人力資源等節。</li>
+      <li>金額均為核定金額，非實際支用數；各年度經費執行率另見指標 4-1。</li>
+    </ul>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    宜蘭縣立大同國民中學　115 學年度實驗教育評鑑　指標 4-2 外部資源之爭取情形　｜　資料期間：112 至 114 學年度
+  </div>
+</footer>
+
+<script>
+const P = {
+  T:{k:'T',n:'教學與學生支持',c:'var(--c-T)'},
+  C:{k:'C',n:'文化場域',c:'var(--c-C)'},
+  F:{k:'F',n:'校舍設施改善',c:'var(--c-F)'},
+  V:{k:'V',n:'技藝教育專班',c:'var(--c-V)'},
+  D:{k:'D',n:'災損復建',c:'var(--c-D)'}
+};
+const PORDER = ['F','V','T','C','D'];
+const AORDER = ['配','競','災'];
+const ANAME = {'配':'申請核配','競':'競爭型提案','災':'災後核撥'};
+const OORDER = ['教務處','學務處','總務處','輔導組'];
+
+// y 學年度, n 計畫名稱, a 核定金額, o 顯示處室, og 統計歸屬處室, p 用途, g 取得方式
+const DATA = [
+{y:112,n:'泰雅傳統家屋維護整修計畫',a:158000,o:'教務處',og:'教務處',p:'C',g:'配'},
+{y:112,n:'學力提升支持與獎勵計畫',a:60000,o:'教務處',og:'教務處',p:'T',g:'配'},
+{y:112,n:'學生學習扶助實施計畫',a:58310,o:'教務處',og:'教務處',p:'T',g:'配'},
+{y:112,n:'推動中小學數位學習精進方案',a:12000,o:'教務處',og:'教務處',p:'T',g:'配'},
+{y:112,n:'宜蘭縣充實國民中小學英語教學圖書計畫',a:18000,o:'教務處',og:'教務處',p:'T',g:'配'},
+{y:112,n:'宜蘭縣充實各國中小圖書館藏書量經費計畫',a:100000,o:'教務處',og:'教務處',p:'T',g:'配'},
+{y:112,n:'營造原住民族文化學習場域實施計畫',a:1997872,o:'教務處／總務處',og:'教務處',p:'C',g:'競'},
+{y:112,n:'教育優先區計畫－發展原住民教育文化特色及充實設備材料',a:149856,o:'學務處',og:'學務處',p:'T',g:'配'},
+{y:112,n:'教育優先區－親職教育計畫',a:16960,o:'學務處',og:'學務處',p:'T',g:'配'},
+{y:112,n:'鼓勵原住民學生發展多元智能補助計畫',a:249000,o:'學務處',og:'學務處',p:'T',g:'配'},
+{y:112,n:'教育部學產基金補助培訓學生特殊專長經費計畫',a:100000,o:'學務處',og:'學務處',p:'T',g:'配'},
+{y:112,n:'教育部體育署補助中小學原住民族學生體育運動發展經費計畫',a:150000,o:'學務處',og:'學務處',p:'T',g:'配'},
+{y:112,n:'廚房遮雨棚和廚餘垃圾暫放區申請計畫',a:150000,o:'總務處',og:'總務處',p:'F',g:'配'},
+{y:112,n:'申請補助中央廚房經費差額計畫',a:70424,o:'總務處',og:'總務處',p:'F',g:'配'},
+{y:112,n:'校園美學－圖書館改善計畫',a:1800000,o:'總務處',og:'總務處',p:'F',g:'競'},
+{y:112,n:'國民中學技藝教育專案編班計畫',a:1807200,o:'輔導組',og:'輔導組',p:'V',g:'配'},
+{y:112,n:'國民中學生涯發展教育計畫（含七年級生涯補助）',a:37000,o:'輔導組',og:'輔導組',p:'T',g:'配'},
+{y:112,n:'【全聯佩樺基金會】圓夢助學計畫－藝術陪伴與自我探索計畫',a:60000,o:'輔導組',og:'輔導組',p:'T',g:'競'},
+
+{y:113,n:'協助公立國民中小學引進部分工時外籍英語教學助理計畫（ELTA）',a:83190,o:'教務處',og:'教務處',p:'T',g:'配'},
+{y:113,n:'學生學習扶助實施計畫',a:39200,o:'教務處',og:'教務處',p:'T',g:'配'},
+{y:113,n:'宜蘭縣充實國民中小學英語教學圖書計畫',a:23000,o:'教務處',og:'教務處',p:'T',g:'配'},
+{y:113,n:'宜蘭縣充實各國中小圖書館藏書量經費計畫',a:100000,o:'教務處',og:'教務處',p:'T',g:'配'},
+{y:113,n:'教育優先區計畫－發展原住民教育文化特色及充實設備材料',a:149100,o:'學務處',og:'學務處',p:'T',g:'配'},
+{y:113,n:'鼓勵原住民學生發展多元智能補助計畫',a:219375,o:'學務處',og:'學務處',p:'T',g:'配'},
+{y:113,n:'教育部學產基金補助培訓學生特殊專長經費計畫',a:100000,o:'學務處',og:'學務處',p:'T',g:'配'},
+{y:113,n:'教育部體育署補助中小學原住民族學生體育運動發展經費計畫',a:130000,o:'學務處',og:'學務處',p:'T',g:'配'},
+{y:113,n:'偏遠地區和非山非市－改善校園排水工程',a:2000000,o:'總務處',og:'總務處',p:'F',g:'配'},
+{y:113,n:'113 年 4 月 3 日地震災損復建經費',a:59000,o:'總務處',og:'總務處',p:'D',g:'災'},
+{y:113,n:'113 年 10 月 3 日山陀兒颱風災損復建經費',a:26000,o:'總務處',og:'總務處',p:'D',g:'災'},
+{y:113,n:'113 年 10 月 31 日康芮颱風災損復建經費',a:130000,o:'總務處',og:'總務處',p:'D',g:'災'},
+{y:113,n:'中央廚房雨庇棚架工程',a:1900000,o:'總務處',og:'總務處',p:'F',g:'配'},
+{y:113,n:'實驗教育課程授課場域修繕計畫',a:60900,o:'總務處',og:'總務處',p:'C',g:'配'},
+{y:113,n:'充實健康中心設備計畫',a:13000,o:'總務處／健康中心',og:'總務處',p:'F',g:'配'},
+{y:113,n:'班級教室整修計畫',a:140000,o:'總務處',og:'總務處',p:'F',g:'配'},
+{y:113,n:'中央廚房裝設電表申請計畫',a:35100,o:'總務處',og:'總務處',p:'F',g:'配'},
+{y:113,n:'國民中學技藝教育專案編班計畫',a:2169760,o:'輔導組',og:'輔導組',p:'V',g:'配'},
+{y:113,n:'國民中學生涯發展教育計畫（含七年級生涯補助）',a:37000,o:'輔導組',og:'輔導組',p:'T',g:'配'},
+{y:113,n:'宜蘭縣國民中小學本土教育整體推動方案計畫',a:58000,o:'輔導組',og:'輔導組',p:'T',g:'配'},
+{y:113,n:'【全聯佩樺基金會】圓夢助學計畫－重新築夢，棒球夢暫停以後',a:60000,o:'輔導組',og:'輔導組',p:'T',g:'競'},
+
+{y:114,n:'學生學習扶助實施計畫',a:48020,o:'教務處',og:'教務處',p:'T',g:'配'},
+{y:114,n:'宜蘭縣充實各國中小圖書館藏書量經費計畫',a:100000,o:'教務處',og:'教務處',p:'T',g:'配'},
+{y:114,n:'教育優先區計畫－發展原住民教育文化特色及充實設備材料',a:149000,o:'學務處',og:'學務處',p:'T',g:'配'},
+{y:114,n:'教育部學產基金補助培訓學生特殊專長經費計畫',a:100000,o:'學務處',og:'學務處',p:'T',g:'配'},
+{y:114,n:'教育部體育署補助中小學原住民族學生體育運動發展經費計畫',a:80000,o:'學務處',og:'學務處',p:'T',g:'配'},
+{y:114,n:'公立國民中小學老舊廁所整修工程',a:1377600,o:'總務處',og:'總務處',p:'F',g:'配'},
+{y:114,n:'充實設施設備－教學行政大樓、專科教室大樓及理化實驗室屋頂防水隔熱工程',a:6300000,o:'總務處',og:'總務處',p:'F',g:'配'},
+{y:114,n:'114 年 11 月 10 日鳳凰颱風災後修繕經費',a:27000,o:'總務處',og:'總務處',p:'D',g:'災'},
+{y:114,n:'高級中等以下學校防災校園建置計畫',a:50000,o:'總務處',og:'總務處',p:'F',g:'配'},
+{y:114,n:'教室設備修繕計畫－更換教室鋁門和紗門採購案',a:225000,o:'總務處',og:'總務處',p:'F',g:'配'},
+{y:114,n:'加強學校飲用水安全計畫',a:29800,o:'總務處',og:'總務處',p:'F',g:'配'},
+{y:114,n:'學校佈告欄改善計畫',a:148000,o:'總務處',og:'總務處',p:'F',g:'配'},
+{y:114,n:'廚房設施設備更新及維護計畫',a:50400,o:'總務處',og:'總務處',p:'F',g:'配'},
+{y:114,n:'中央廚房設備改善計畫－切菜機',a:50000,o:'總務處',og:'總務處',p:'F',g:'配'},
+{y:114,n:'國民中學技藝教育專案編班計畫',a:2170000,o:'輔導組',og:'輔導組',p:'V',g:'配'},
+{y:114,n:'國民中學生涯發展教育計畫（含七年級生涯補助）',a:37000,o:'輔導組',og:'輔導組',p:'T',g:'配'},
+{y:114,n:'補助高級中等以下學校關懷動物生命教育計畫',a:40000,o:'輔導組',og:'輔導組',p:'T',g:'競'}
+];
+
+const YEARS=[112,113,114];
+const fmt = n => n.toLocaleString('en-US');
+const pct = (a,b) => (a/b*100).toFixed(1)+'%';
+const sum = arr => arr.reduce((s,d)=>s+d.a,0);
+const TOTAL = sum(DATA);
+const MAXA = Math.max(...DATA.map(d=>d.a));
+
+document.getElementById('figAmt').textContent = fmt(TOTAL);
+
+/* ---- weave (static figure; detail lives in the table below) ---- */
+(function(){
+  const host=document.getElementById('weave');
+  const man = n => (n/10000).toFixed(1).replace(/\.0$/,'')+' 萬';
+  YEARS.forEach(y=>{
+    const items=DATA.filter(d=>d.y===y)
+      .sort((a,b)=>OORDER.indexOf(a.og)-OORDER.indexOf(b.og) || b.a-a.a);
+    const row=document.createElement('div');row.className='wrow';
+    const yl=document.createElement('div');yl.className='wyear';
+    yl.innerHTML=y+' 學年度<small>'+items.length+' 案<br>'+fmt(sum(items))+' 元</small>';
+
+    const right=document.createElement('div');
+    const cells=document.createElement('div');cells.className='wcells';
+    cells.setAttribute('aria-hidden','true');
+    items.forEach(d=>{
+      const size=Math.max(15,Math.round(Math.sqrt(d.a/MAXA)*46));
+      const b=document.createElement('span');
+      b.className='dia';
+      b.style.width=(size*1.45)+'px';b.style.height=(size*1.45)+'px';
+      b.title=d.n+'　'+fmt(d.a)+' 元（'+P[d.p].n+'）';
+      const i=document.createElement('i');
+      i.style.setProperty('--dc',P[d.p].c);
+      i.style.width=size+'px';i.style.height=size+'px';
+      b.appendChild(i);
+      cells.appendChild(b);
+    });
+
+    const top3=items.slice().sort((a,b)=>b.a-a.a).slice(0,3);
+    const note=document.createElement('p');note.className='wnote';
+    note.innerHTML='規模最大三案：'+top3.map(d=>'<b>'+d.n+'</b> '+man(d.a)).join('　／　');
+
+    right.appendChild(cells);right.appendChild(note);
+    row.appendChild(yl);row.appendChild(right);host.appendChild(row);
+  });
+})();
+
+/* ---- stacked bars helper ---- */
+function stacked(hostId, groups, keyOrder, nameOf, colorOf){
+  const host=document.getElementById(hostId);
+  const max=Math.max(...groups.map(g=>g.total));
+  groups.forEach(g=>{
+    const box=document.createElement('div');box.className='stackgroup';
+    const lab=document.createElement('div');lab.className='barlabel';
+    lab.innerHTML='<span>'+g.label+'</span><b>'+fmt(g.total)+' 元</b>';
+    const bar=document.createElement('div');bar.className='stack';
+    bar.style.width=(g.total/max*100)+'%';
+    keyOrder.forEach(k=>{
+      const v=g.parts[k]||0; if(!v) return;
+      const seg=document.createElement('div');
+      seg.style.width=(v/g.total*100)+'%';
+      seg.style.background=colorOf(k);
+      seg.title=nameOf(k)+'：'+fmt(v)+' 元';
+      bar.appendChild(seg);
+    });
+    box.appendChild(lab);box.appendChild(bar);host.appendChild(box);
+  });
+}
+
+/* ---- purpose ---- */
+(function(){
+  const groups=YEARS.map(y=>{
+    const items=DATA.filter(d=>d.y===y);
+    const parts={};PORDER.forEach(k=>parts[k]=sum(items.filter(d=>d.p===k)));
+    return {label:y+' 學年度',total:sum(items),parts};
+  });
+  stacked('purposeBars',groups,PORDER,k=>P[k].n,k=>P[k].c);
+
+  const tb=document.querySelector('#purposeTable tbody');
+  PORDER.forEach(k=>{
+    const items=DATA.filter(d=>d.p===k);
+    const tr=document.createElement('tr');
+    tr.innerHTML='<td><span class="tag" style="background:'+P[k].c+'">'+P[k].n+'</span></td>'+
+      '<td class="num">'+items.length+'</td>'+
+      YEARS.map(y=>'<td class="num">'+fmt(sum(items.filter(d=>d.y===y)))+'</td>').join('')+
+      '<td class="num">'+fmt(sum(items))+'</td><td class="num">'+pct(sum(items),TOTAL)+'</td>';
+    tb.appendChild(tr);
+  });
+  document.querySelector('#purposeTable tfoot').innerHTML=
+    '<tr><td>合計</td><td class="num">'+DATA.length+'</td>'+
+    YEARS.map(y=>'<td class="num">'+fmt(sum(DATA.filter(d=>d.y===y)))+'</td>').join('')+
+    '<td class="num">'+fmt(TOTAL)+'</td><td class="num">100.0%</td></tr>';
+})();
+
+/* ---- office ---- */
+(function(){
+  const host=document.getElementById('officeBars');
+  const max=Math.max(...OORDER.map(o=>sum(DATA.filter(d=>d.og===o))));
+  OORDER.forEach(o=>{
+    const items=DATA.filter(d=>d.og===o);const t=sum(items);
+    const row=document.createElement('div');row.className='hbar';
+    row.innerHTML='<div class="hname">'+o+'</div>'+
+      '<div class="htrack"><div class="hfill" style="width:'+(t/max*100)+'%"></div></div>'+
+      '<div class="hval"><b>'+fmt(t)+'</b> 元 / '+items.length+' 案</div>';
+    host.appendChild(row);
+  });
+})();
+
+/* ---- table + filters ---- */
+(function(){
+  const state={y:null,o:null,p:null,g:null,q:'',sort:'y',dir:1};
+  const tb=document.querySelector('#mainTable tbody');
+  const tf=document.querySelector('#mainTable tfoot');
+  const cnt=document.getElementById('count');
+
+  function chips(hostId,key,values,labelOf){
+    const host=document.getElementById(hostId);
+    const all=[{v:null,l:'全部'}].concat(values.map(v=>({v,l:labelOf?labelOf(v):String(v)})));
+    all.forEach(o=>{
+      const b=document.createElement('button');
+      b.className='chip';b.type='button';b.textContent=o.l;
+      b.setAttribute('aria-pressed',state[key]===o.v?'true':'false');
+      b.addEventListener('click',()=>{
+        state[key]=o.v;
+        host.querySelectorAll('.chip').forEach(c=>c.setAttribute('aria-pressed','false'));
+        b.setAttribute('aria-pressed','true');
+        render();
+      });
+      host.appendChild(b);
+    });
+  }
+  chips('fYear','y',YEARS,v=>v+' 學年度');
+  chips('fOffice','o',OORDER);
+  chips('fPurpose','p',PORDER,v=>P[v].n);
+
+  document.getElementById('q').addEventListener('input',e=>{state.q=e.target.value.trim();render();});
+  document.querySelectorAll('.sortbtn').forEach(b=>{
+    b.addEventListener('click',()=>{
+      const k=b.dataset.sort;
+      if(state.sort===k){state.dir*=-1;}else{state.sort=k;state.dir=(k==='a'?-1:1);}
+      render();
+    });
+  });
+
+  function render(){
+    let rows=DATA.filter(d=>
+      (state.y===null||d.y===state.y)&&
+      (state.o===null||d.og===state.o)&&
+      (state.p===null||d.p===state.p)&&
+      (state.g===null||d.g===state.g)&&
+      (state.q===''||d.n.indexOf(state.q)>-1)
+    );
+    rows=rows.slice().sort((a,b)=>{
+      if(state.sort==='a') return (a.a-b.a)*state.dir;
+      return ((a.y-b.y)||(b.a-a.a))*state.dir;
+    });
+    tb.innerHTML=rows.map(d=>
+      '<tr><td class="num">'+d.y+'</td><td>'+d.n+'</td><td class="num">'+fmt(d.a)+'</td>'+
+      '<td>'+d.o+'</td><td><span class="tag" style="background:'+P[d.p].c+'">'+P[d.p].n+'</span></td>'+
+      '<td><span class="tag g">'+ANAME[d.g]+'</span></td></tr>'
+    ).join('');
+    tf.innerHTML='<tr><td colspan="2">篩選結果合計</td><td class="num">'+fmt(sum(rows))+'</td><td colspan="3"></td></tr>';
+    cnt.textContent='目前顯示 '+rows.length+' 案，合計 '+fmt(sum(rows))+' 元（全部 '+DATA.length+' 案，'+fmt(TOTAL)+' 元）。';
+  }
+  render();
+})();
+</script>
+</body>
+</html>
